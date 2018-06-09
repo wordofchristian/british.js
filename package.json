@@ -1,0 +1,9 @@
+{
+  "name": "british.js",
+  "version": "1.0.0",
+  "description": "Converts the crude American spelling of Javascript globals to the proper British versions 🇬🇧",
+  "main": "index.js",
+  "repository": "https://github.com/wordofchristian/british.js.git",
+  "author": "Christian Schlensker <christian@cswebartisan.com>",
+  "license": "MIT"
+}
