@@ -2,15 +2,24 @@
   "name": "british.js",
   "version": "1.0.0",
   "description": "Converts the crude American spelling of Javascript globals to the proper British versions 🇬🇧",
-  "main": "index.js",
+  "main": "dist",
   "repository": "https://github.com/wordofchristian/british.js.git",
   "author": "Christian Schlensker <christian@cswebartisan.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist/proper.js",
+    "dist/extended.js"
+  ],
   "dependencies": {
     "alias-decorator": "^2.0.0",
     "jest": "^23.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
     "babel-plugin-transform-decorators": "^6.24.1",

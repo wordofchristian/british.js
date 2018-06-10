@@ -9,11 +9,4 @@ const GLOBAL = getGlobal();
  */
 export default function globalAlias(original, name) {
   GLOBAL[name] = original;
-
-  if (typeof original === 'function') {
-    Object.defineProperty(original, 'name', {
-      value: name,
-      writable: false,
-    });
-  }
 }
