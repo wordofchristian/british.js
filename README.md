@@ -28,7 +28,7 @@ import 'british.js/extended';
 
 The following corrections are supported in the main library
 
-### `Maths`
+### Maths
 
 Example usage:
 
