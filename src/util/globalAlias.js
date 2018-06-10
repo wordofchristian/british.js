@@ -1,12 +1,6 @@
-let ROOT;
+import getGlobal from './getGlobal';
 
-if (typeof window !== 'undefined') {
-  ROOT = window;
-} else if (typeof global !== 'undefined') {
-  ROOT = global;
-} else {
-  ROOT = this;
-}
+const GLOBAL = getGlobal();
 
 /**
  * Creates a global alias for both node and browser environments
@@ -14,9 +8,12 @@ if (typeof window !== 'undefined') {
  * @param {string} name new global name for the object
  */
 export default function globalAlias(original, name) {
-  ROOT[name] = original;
+  GLOBAL[name] = original;
 
   if (typeof original === 'function') {
-    original.name = name; // this will make it print correctly in the console
+    Object.defineProperty(original, 'name', {
+      value: name,
+      writable: false,
+    });
   }
 }

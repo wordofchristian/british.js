@@ -3,6 +3,10 @@ import memberAlias from './util/memberAlias';
 
 globalAlias(Math, 'Maths');
 
+if (typeof window !== 'undefined') {
+  memberAlias(window.screen, 'colorDepth', 'colourDepth');
+}
+
 if (typeof WebGLProgram !== 'undefined') {
   globalAlias(WebGLProgram, 'WebGLProgramme');
 }

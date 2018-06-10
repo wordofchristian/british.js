@@ -6,6 +6,12 @@ describe('Maths', () => {
   });
 });
 
+describe('color', () => {
+  test('window.screen.colourDepth', () => {
+    expect(window.screen.colourDepth).toEqual(window.screen.colorDepth);
+  });
+});
+
 if (typeof WebGLProgram !== 'undefined') {
   describe('WebGLProgramme', () => {
     it('should inherit WebGLProgram', () => {
