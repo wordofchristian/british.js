@@ -3,7 +3,7 @@
 A polyfill that lets you forget the crude American spelling of Javascript symbols in lieu of
 the proper British spellings.
 
-**💂‍DISCLAIMER💂‍**: Before using please read the [disclaimer](#disclaimer) below.
+**💂‍DISCLAIMER 💂‍**: Before using please read the [disclaimer](#disclaimer) below.
 
 ## Installation
 
