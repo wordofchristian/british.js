@@ -34,12 +34,27 @@ Example usage:
 
 ```javascript
 Maths.round(3.1459); // => 3
+Maths.floor(3.1459); // => 3
+Maths.ceil(3.1459); // => 4
+Maths.abs(-42); // => 42
 Maths.min(100, 200, 300); // => 100
+Maths.max(100, 200, 300); // => 300
 ```
 
 ### Colour
 
 - `window.screen.colourDepth`
+- `CanvasGradient.addColorStop()`
+
+### Programme
+
+- `WebGLProgramme`
+- `WebGLRenderingContext.isProgramme()`
+- `WebGLRenderingContext.useProgramme()`
+- `WebGLRenderingContext.linkProgramme()`
+- `WebGLRenderingContext.createProgramme()`
+- `WebGLRenderingContext.deleteProgramme()`
+- `WebGLRenderingContext.validateProgramme()`
 
 ### AudioScheduledSourceNode
 
@@ -66,7 +81,7 @@ This gives you access to the following polyfills.
 ## Disclaimer
 
 This library is meant to be ironic and is not intended for actual use. Please please
-don't use it.
+don't use it. It is not production ready.
 
 ## Contributing
 

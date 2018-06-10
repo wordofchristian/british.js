@@ -11,6 +11,10 @@ if (typeof WebGLProgram !== 'undefined') {
   globalAlias(WebGLProgram, 'WebGLProgramme');
 }
 
+if (typeof CanvasGradient !== 'undefined') {
+  memberAlias(CanvasGradient.prototype, 'addColorStop', 'addColourStop');
+}
+
 if (typeof WebGLRenderingContext !== 'undefined') {
   memberAlias(WebGLRenderingContext.prototype, 'isProgram', 'isProgramme');
   memberAlias(WebGLRenderingContext.prototype, 'useProgram', 'useProgramme');
