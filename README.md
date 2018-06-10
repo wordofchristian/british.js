@@ -1,9 +1,9 @@
-# british.js
+# 🇬🇧 british.js
 
-A polyfill that lets you forget the crude American spelling of Javascript globals in lieu of
-the proper British spellings 🇬🇧
+A polyfill that lets you forget the crude American spelling of Javascript symbols in lieu of
+the proper British spellings.
 
-**DISCLAIMER**: Before using please read the [disclaimer](#disclaimer) below 💂‍♀️
+**💂‍DISCLAIMER💂‍**: Before using please read the [disclaimer](#disclaimer) below.
 
 ## Installation
 
@@ -44,7 +44,7 @@ Maths.max(100, 200, 300); // => 300
 ### Colour
 
 - `window.screen.colourDepth`
-- `CanvasGradient.addColorStop()`
+- `CanvasGradient.addColourStop()`
 
 ### Programme
 
